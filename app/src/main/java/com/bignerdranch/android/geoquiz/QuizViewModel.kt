@@ -3,11 +3,12 @@ package com.bignerdranch.android.geoquiz
 import android.util.Log  // imports the following
 import androidx.lifecycle.ViewModel
 
-private const val TAG = "QuizViewModel"  // creates a TAG variable for
+private const val TAG = "QuizViewModel"  // creates a TAG value for QuizViewModel
 
 class QuizViewModel : ViewModel() {
 
     var currentIndex = 0  // initializes currentIndex variable that holds an Int of 0
+    var isCheater = false // initializes isCheater variable that holds a Boolean = false
 
     private val questionBank = listOf(  // initializes questionBank list that holds question string reference and answer values
         Question(R.string.question_australia, true),
